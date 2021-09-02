@@ -2,12 +2,13 @@ import cv2 as cv
 import imutils
 import time
 
+#ok
 ASCII_CHARS = [".",",",":",";","+","*","?","%","@","#","@"]
 
 for index in range(1,6569,2):
     global timee
     timee = time.time() + 0.066
-    new_width = 50
+    new_width = 100
     path = ".\images\\BadApple"+str(index).rjust(5,"0")+".png"
     img = cv.imread(path)
     img = imutils.resize(img, width=new_width)
