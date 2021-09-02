@@ -2,7 +2,7 @@ import cv2 as cv
 import imutils
 import time
 
-#ok
+#
 ASCII_CHARS = [".",",",":",";","+","*","?","%","@","#","@"]
 
 for index in range(1,6569,2):
