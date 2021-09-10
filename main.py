@@ -2,15 +2,15 @@ import cv2 as cv
 import imutils
 import time
 
-#
 ASCII_CHARS = [".",",",":",";","+","*","?","%","@","#","@"]
+cap = cv.VideoCapture('BadApple.mp4')
+success, img = cap.read()
+new_width = 100
 
-for index in range(1,6569,2):
+while success:   
     global timee
-    timee = time.time() + 0.066
-    new_width = 100
-    path = ".\images\\BadApple"+str(index).rjust(5,"0")+".png"
-    img = cv.imread(path)
+    timee = time.time() + 0.0333
+    success, img = cap.read()
     img = imutils.resize(img, width=new_width)
     img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     img = img.tolist()
