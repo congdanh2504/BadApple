@@ -8,7 +8,6 @@ success, img = cap.read()
 new_width = 100
 
 while success:   
-    global timee
     timee = time.time() + 0.0333
     success, img = cap.read()
     img = imutils.resize(img, width=new_width)
